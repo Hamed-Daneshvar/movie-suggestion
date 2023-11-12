@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 commitizen = "*"
 flask = "*"
+flask-wtf = "*"
+python-dotenv = "*"
 
 [dev-packages]
 

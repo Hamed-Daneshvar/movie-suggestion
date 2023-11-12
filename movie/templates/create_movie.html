@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Form</title>
+</head>
+<body>
+    <h1>My Form</h1>
+    <form method="POST" action="{{ url_for('create_movie') }}">
+        {{ form.csrf_token }}
+        {{ form.title.label }}: {{ form.title() }}<br>
+        {{ form.year.label }}: {{ form.year() }}<br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
